@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قائمة الدكاترة</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="card.css">
+</head>
+<style>
+  /* تظبيط روابط القائمة */
+.navbar-nav .nav-link {
+    position: relative;
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: color 0.3s;
+}
+
+/* الخط تحت الرابط عند المرور */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary-color);
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+/* عند المرور بالماوس */
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+</style>
+<body dir="rtl">
+  
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-custom rounded shadow-sm mb-4">
+    <div class="container-fluid">
+
+        <!-- أزرار الصفحة الرئيسية وبيانات الطالب -->
+        <div class="d-flex gap-2">
+            <a class="btn btn-outline-primary" href="home.html">
+                <i class="bi bi-house-door-fill"></i> الصفحة الرئيسية
+            </a>
+
+            <a class="btn btn-outline-primary" href="profile.html">
+                <i class="bi bi-person-fill"></i> بيانات الطالب
+            </a>
+        </div>
+
+        <!-- زرار التوجل للموبايل -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+            <!-- الروابط الأساسية في النص -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">بيان بالمقررات المسجلة</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">بيان تفصيلي بالمصروفات</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">خدمات طلابية</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">نتيجة العام الحالي</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">اختبارات الطالب</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">بطاقة دخول الامتحان</a>
+                </li>
+
+            </ul>
+
+            <!-- زر تسجيل الخروج في أقصى الشمال -->
+                <!-- زر تسجيل الخروج في أقصى اليمين -->
+<div class="me-auto">
+<button class="btn btn-outline-danger" onclick="logout()">
+    <i class="bi bi-box-arrow-right"></i> تسجيل الخروج
+</button>
+</div>
+
+        </div>
+
+    </div>
+</nav>
+
+  
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">الدكاترة</h1>
+
+<div class="doctors-slider">
+
+  <!-- دكتور 1 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">د. محمد رمضان</h5>
+    <a href="doc.html?id=1" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+
+  <!-- دكتور 2 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">د. ايات طه</h5>
+    <a href="doc.html?id=3" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+
+  <!-- دكتور 3 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">د. رشا السطوحي</h5>
+    <a href="doc.html?id=2" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+
+  <!-- دكتور 4 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">د. ايمان منير</h5>
+    <a href="doc.html?id=4" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+
+  <!-- دكتور 5 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">د. رحاب</h5>
+    <a href="doc.html?id=5" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+  <!-- دكتور 6 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">----</h5>
+    <a href="#" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+  <!-- دكتور 7 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">----</h5>
+    <a href="#" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+  <!-- دكتور 8 -->
+  <div class="card p-3 doctor-card text-center shadow-sm">
+    <i class="bi bi-person-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+    <h5 class="card-title mt-2">----</h5>
+    <a href="#" class="btn btn-primary btn-sm">عرض المواد</a>
+  </div>
+</div>
+
+<div class="news-section mx-auto" style="max-width: 700px;">
+
+  <h3 class="text-primary mb-4 text-center">
+    <i class="bi bi-megaphone-fill"></i> الأخبار والإيفنتات
+  </h3>
+
+
+</div>
+<div class="news-section">
+  
+  <div class="news-item">
+    <h6 class="mb-1">بدء التسجيل للفصل الصيفي 2025</h6>
+    <small class="text-muted">4 مايو 2025</small>
+  </div>
+
+  <div class="news-item">
+    <h6 class="mb-1">إعلان جدول الامتحانات النهائية</h6>
+    <small class="text-muted">2 مايو 2025</small>
+  </div>
+
+  <div class="news-item">
+    <h6 class="mb-1">ورشة عمل مجانية: مهارات التقديم الوظيفي</h6>
+    <small class="text-muted">28 إبريل 2025</small>
+  </div>
+
+</div>
+
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

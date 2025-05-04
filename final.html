@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة طيبة الوطنية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #4a90e2, #1e5799);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .header img {
+            height: 80px;
+            margin-left: 20px;
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-size: 14px;
+            color: #ddd;
+            margin: 5px 0;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px 0;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #4a90e2;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            color: #1e5799;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .main-content .highlight {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ddd;
+            font-size: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="شعار الجامعة">
+        <div class="header-content">
+            <h1>جامعة  القاهرة الجديدة التكنولوجية</h3>
+            <p>رقم القبول: 30410262100675 - العام: 2024/1793</p>
+            <p>الدراسة بدأت في عام 2019 (التقويم الهجري)</p>
+            <p>المدة الدراسية: 2024 - 2025</p>
+            <p>الموقع: أم درمان، السودان - الهاتف: 0912345678</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>قوائم التنقل</h2>
+            <ul>
+                <li><a href="#">عن الجامعة</a></li>
+                <li><a href="#">لوحة المعلومات</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">الأخبار</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div>
+                <h2>الإعلانات</h2>
+                <p>التقويم الدراسي <span class="highlight">2024-2025</span> متاح الآن</p>
+                <p>تحقق من التفاصيل</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>جميع الحقوق محفوظة © جامعة طيبة الوطنية 2025</p>
+    </div>
+
+    <script>
+        // يمكن إضافة JavaScript هنا للتفاعلية إذا لزم الأمر
+        console.log("تم تحميل الموقع بنجاح!");
+    </script>
+</body>
+</html>

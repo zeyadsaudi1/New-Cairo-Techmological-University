@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>بوابة الجامعة | تسجيل الدخول</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <div class="university-logo-container">
+                    <img src="img/logo.jpeg" alt="شعار الجامعة" class="university-logo-img">
+                </div>
+                <h1>انشئ حسابك</h1>
+
+                <input type="text" placeholder="الاسم">
+                <input type="text" placeholder="الكود">
+                <input type="text" placeholder="التخصص">
+                <input type="email" placeholder="البريد الإلكتروني">
+
+                <div class="password-wrapper">
+                    <input type="password" placeholder="كلمه السر" id="signupPassword">
+                    <i class="fa-solid fa-eye" data-target="signupPassword"></i>
+                </div>
+
+                <button>تسجيل حساب جديد</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form>
+                <div class="university-logo-container">
+                    <img src="img/logo.jpeg" alt="شعار الجامعة" class="university-logo-img">
+                </div>
+                <h1>بوابة الجامعة | تسجيل الدخول </h1>
+
+                <input type="email" placeholder="Email">
+
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Password" id="signinPassword">
+                    <i class="fa-solid fa-eye" data-target="signinPassword"></i>
+                </div>
+
+                <a href="#">نسيت كلمه السر?</a>
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>تسجيل حساب جديد!</h1>
+                    <p>ادخل البيانات المطلوبه بحذر للتسجيل لاحقا.</p>
+                    <button class="hidden" id="login">تسجيل الدخول</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>مرحبا بك!</h1>
+                    <button class="hidden" id="register">تسجيل حسابك</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
